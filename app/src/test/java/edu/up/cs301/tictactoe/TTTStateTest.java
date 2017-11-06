@@ -19,4 +19,11 @@ public class TTTStateTest {
             }
         }
     }
+
+    @Test
+    public void testSetPiece() {
+        TTTState state = new TTTState();
+        state.setPiece(1,2,'X');
+        assertTrue("Set piece bad", state.getPiece(1,2) == 'X');
+    }
 }
